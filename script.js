@@ -1,19 +1,19 @@
-window.addEventListener("load", () => {
-  document.querySelector("header.navbar");
-});
+// window.addEventListener("load", () => {
+//   const navbar = document.querySelector("header.navbar");
+
+//   const navbarTop = navbar.getBoundingClientRect().top;
+
+//   console.log(navbarTop);
+// });
 
 window.addEventListener("DOMContentLoaded", () => {
   const navbar = document.querySelector("header.navbar");
-  const navbarTop = navbar.getBoundingClientRect().top;
   const navbarHeight = navbar.getBoundingClientRect().height;
 
   window.addEventListener("scroll", e => {
+    const navbarTop = navbar.getBoundingClientRect().top;
+
     console.log("window", this.scrollY);
-
-    console.log("nav", navbarTop - navbarHeight);
-
-    if ((navbar.getBoundingClientRect().top = 0)) {
-      console.log("a");
-    }
+    console.log("nav", navbarTop);
   });
 });
