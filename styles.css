@@ -17,17 +17,14 @@ body {
   width: 100%;
 }
 
-
 .navbar {
   height: 60px;
   background: #111;
-    position: sticky;
-  top: 0;
+  //   position: sticky;
+  //  top: 0;
 }
 
 .navbar__menu {
-  position: sticky;
-  top: 0;
   margin: 0;
 }
 .navbar__item {
