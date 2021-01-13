@@ -4,3 +4,7 @@
 
 
 https://przeprogramowani.netlify.app/opanuj-javascript_sticky-navbar.pdf
+
+https://css-tricks.com/scroll-fix-content/
+
+https://codepen.io/chriscoyier/pen/AdaKr
