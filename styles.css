@@ -21,6 +21,13 @@ body {
   height: 60px;
   background: #111;
 }
+/* ----------------- */
+
+.navbar__menu {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
 
 .fixed-nav .navbar__menu {
   position: fixed;
@@ -30,6 +37,47 @@ body {
   background: #111;
 }
 
+.burger-menu {
+  width: 40px;
+  height: 30px;
+  background-color: transparent;
+  visibility: visible;
+}
+.burger-menu .burger-menu--hidden {
+  visibility: hidden;
+}
+.burger-menu button {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.burger-menu button span {
+  height: 5px;
+  width: 100%;
+  background-color: #fc8181;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.burger-menu button span:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.burger-menu button span:nth-child(3) {
+  top: initial;
+  bottom: 0;
+}
+
+/* ------------------ */
 .navbar__menu {
   margin: 0;
 }
