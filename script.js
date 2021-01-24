@@ -1,13 +1,8 @@
-
-
 window.addEventListener("load", () => {
-  const nav = document.querySelector("header.navbar");
+  const nav = document.querySelector("nav.navbar__menu");
   const navTop = nav.offsetTop;
 
   function stickyNavigation() {
-    console.log("navTop = " + navTop);
-    console.log("scrollY = " + window.scrollY);
-
     if (window.scrollY >= navTop) {
       document.body.classList.add("fixed-nav");
     } else {
@@ -17,3 +12,9 @@ window.addEventListener("load", () => {
   window.addEventListener("scroll", stickyNavigation);
 });
 
+window.addEventListener("DOMContentLoaded", () => {
+
+
+
+  
+});
