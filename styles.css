@@ -21,12 +21,13 @@ body {
   height: 60px;
   background: #111;
 }
-/* ----------------- */
+/* ----------------- zmiany ---------------------*/
 
 .navbar__menu {
   align-items: center;
   display: flex;
   justify-content: space-around;
+  position: relative;
 }
 
 .fixed-nav .navbar__menu {
@@ -37,13 +38,21 @@ body {
   background: #111;
 }
 
+.navbar__menu ul {
+  visibility: visible;
+}
+
+.navbar__menu ul.menu-list--hidden {
+  visibility: hidden;
+}
+
 .burger-menu {
   width: 40px;
   height: 30px;
   background-color: transparent;
   visibility: visible;
 }
-.burger-menu .burger-menu--hidden {
+.burger-menu.burger-menu--hidden {
   visibility: hidden;
 }
 .burger-menu button {
@@ -75,6 +84,30 @@ body {
 .burger-menu button span:nth-child(3) {
   top: initial;
   bottom: 0;
+}
+
+/* small size */
+body.small-size .navbar__menu ul {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 60px;
+  left: 0;
+}
+
+body.small-size .navbar__menu ul li {
+  background-color: #000;
+}
+
+body.small-size .navbar__menu {
+  height: 60px;
+  justify-content: flex-end;
+}
+
+body.small-size .navbar__menu .burger-menu {
+  margin-right: 30px;
 }
 
 /* ------------------ */
