@@ -1,22 +1,19 @@
-// window.addEventListener("load", () => {
-//   const navbar = document.querySelector("header.navbar");
-
-//   const navbarTop = navbar.getBoundingClientRect().top;
-
-//   console.log(navbarTop);
-// });
-
-window.addEventListener("DOMContentLoaded", () => {
-  const navbar = document.querySelector("header.navbar");
-  const navbarHeight = navbar.getBoundingClientRect().height;
-  const hero = document.querySelector(".hero");
 
 
-console.log(hero)
-  window.addEventListener("scroll", e => {
-    const navbarTop = navbar.getBoundingClientRect().top;
+window.addEventListener("load", () => {
+  const nav = document.querySelector("header.navbar");
+  const navTop = nav.offsetTop;
 
-    console.log("window", this.scrollY);
-    console.log("nav", navbarTop);
-  });
+  function stickyNavigation() {
+    console.log("navTop = " + navTop);
+    console.log("scrollY = " + window.scrollY);
+
+    if (window.scrollY >= navTop) {
+      document.body.classList.add("fixed-nav");
+    } else {
+      document.body.classList.remove("fixed-nav");
+    }
+  }
+  window.addEventListener("scroll", stickyNavigation);
 });
+

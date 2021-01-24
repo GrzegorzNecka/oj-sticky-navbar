@@ -20,8 +20,14 @@ body {
 .navbar {
   height: 60px;
   background: #111;
-  //   position: sticky;
-  //  top: 0;
+
+}
+
+.fixed-nav .navbar {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
 }
 
 .navbar__menu {
